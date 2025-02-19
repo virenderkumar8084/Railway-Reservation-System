@@ -39,12 +39,6 @@ Now, the frontend part will run on `http://localhost:3000/`.
 
 Now, both the frontend and backend linked with each other and system is ready to use. 
 
-### Proof of Work
-
-
-### Preview
-![Home Page](client/public/home.png)
-![Booking Cancel page](client/public/booking.png)
 
 ### Login Credentials
 
@@ -52,6 +46,13 @@ To log in, use the following test credentials:
 
 - **Email:** `testuser01@gmail.com`
 - **Password:** `test01@`
+
+### Proof of Work
+
+
+### Preview
+![Home Page](client/public/home.png)
+![Booking Cancel page](client/public/booking.png)
 
 ## Tech Stack
 
