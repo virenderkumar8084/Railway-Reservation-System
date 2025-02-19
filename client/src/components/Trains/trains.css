@@ -1,0 +1,32 @@
+.trains-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 1em;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.search-div {
+  display: flex;
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 0 1em;
+}
+
+#train-search {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2em auto 3em auto;
+  padding: 1em 1.5em;
+  font-size: 1.1em;
+  border: 2px solid #1a73e8;
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+#train-search:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}

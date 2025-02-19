@@ -1,0 +1,120 @@
+.profile-container {
+  background: rgba(25, 25, 25, 0.95);
+  margin: 2rem auto;
+  padding: 2.5rem;
+  max-width: 1200px;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info-section {
+  background: rgba(12, 55, 112, 0.25);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(26, 115, 232, 0.3);
+}
+
+.user-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.user-info-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.user-info-card:hover {
+  transform: translateY(-3px);
+}
+
+.info-label {
+  color: #8ab4f8;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.bookings-section {
+  background: rgba(12, 55, 112, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(26, 115, 232, 0.25);
+}
+
+.profile-section-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #1a73e8;
+}
+
+.no-bookings {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .user-info-section,
+  .bookings-section {
+    padding: 1.5rem;
+  }
+  
+  .profile-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-value {
+    font-size: 1.1rem;
+  }
+}

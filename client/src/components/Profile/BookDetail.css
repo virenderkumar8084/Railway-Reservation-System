@@ -1,0 +1,46 @@
+ .book-detail-item {
+  background-color: #1a73e8; /* Blue background to match navbar */
+  color: white; /* White text */
+  margin-top: 1em;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-detail-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.book-detail-item h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em; /* Larger font size for train name */
+}
+
+.book-detail-item h4 {
+  margin: 0.5em 0; /* Increased margin for better spacing */
+  font-weight: normal;
+  font-size: 1em; /* Standard font size for details */
+}
+
+.book-detail-item > #cancel-button {
+  position: absolute;
+  top: 5em;
+  right: 5em;
+  background-color: #ff4444; /* Red background for cancel button */
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  padding: 0.5em 1em; /* Padding for better button size */
+  cursor: pointer;
+  color: white; /* White text */
+  font-weight: bold;
+  font-size: 0.9em; /* Slightly smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-detail-item > #cancel-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
